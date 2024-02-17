@@ -16,6 +16,7 @@ import { getWishlistProducts, getUserAddresses } from './src/components/redux/ac
 import { isIOS } from './src/utils/deviceInfo'
 
 const App = () => {
+  
   useEffect(() => {
     if (isAndroid) setTimeout(() => SplashScreen.hide(), 200)
     if (isIOS) enableScreens(false);
